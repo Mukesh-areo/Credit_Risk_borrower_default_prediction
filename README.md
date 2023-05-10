@@ -43,14 +43,15 @@ The data was preprocessed by handling missing values, encoding categorical varia
 
 
 
-Model Development
-Three models were trained and tested on the data set:  Random Forest, Decision Tree, Gradient Boosting, Logistic Regression, K-Neighbors Classifier, XGBClassifier, CatBoosting Classifier, Support Vector Classifier, and AdaBoost Classifier.
-The Random Forest and Decision Tree models seem to have overfitted the training data since they achieve perfect accuracy, F1 score, precision, recall, and ROC AUC scores on the training set. However, their performance on the test set is still good, with accuracy, F1 score, precision, recall, and ROC AUC scores above 0.99.
-Gradient Boosting and K-Neighbors Classifier have slightly lower performance metrics on the test set compared to the Random Forest and Decision Tree models, but they have better generalization since their performance metrics on the training set are lower than 1.0.
-Logistic Regression, CatBoosting Classifier, Support Vector Classifier, and AdaBoost Classifier have the lowest performance metrics on the test set, but their generalization is better than the Random Forest and Decision Tree models since they have lower performance metrics on the training set.
-It might be worth considering using the K-Neighbors Classifier, XGBClassifier, or Gradient Boosting for this particular classification task since they have a good balance between high-performance metrics on the test set and generalization to unseen data.
-Done some hyperparameter tuning parameters for XGBoost and Random Forest models. 
-Conclusion Based on the results of the three models - Random Forest Classifier, KNeighborsClassifier, and XGBClassifier - we can conclude that all three models performed well on both the training and test sets, with high accuracy, F1 score, precision, and recall.
+## Model Development
+   Three models were trained and tested on the data set:  Random Forest, Decision Tree, Gradient Boosting, Logistic Regression, K-Neighbors Classifier, XGBClassifier, CatBoosting Classifier, Support Vector Classifier, and AdaBoost Classifier.The Random Forest and Decision Tree models seem to have overfitted the training data since they achieve perfect accuracy, F1 score, precision, recall, and ROC AUC scores on the training set. However, their performance on the test set is still good, with accuracy, F1 score, precision, recall, and ROC AUC scores above 0.99.
+   Gradient Boosting and K-Neighbors Classifier have slightly lower performance metrics on the test set compared to the Random Forest and Decision Tree models, but they have better generalization since their performance metrics on the training set are lower than 1.0.
+   Logistic Regression, CatBoosting Classifier, Support Vector Classifier, and AdaBoost Classifier have the lowest performance metrics on the test set, but their generalization is better than the Random Forest and Decision Tree models since they have lower performance metrics on the training set.
+   It might be worth considering using the K-Neighbors Classifier, XGBClassifier, or Gradient Boosting for this particular classification task since they have a good balance between high-performance metrics on the test set and generalization to unseen data.
+   Done some hyperparameter tuning parameters for XGBoost and Random Forest models. 
+
+## Conclusion 
+Based on the results of the three models - Random Forest Classifier, KNeighborsClassifier, and XGBClassifier - we can conclude that all three models performed well on both the training and test sets, with high accuracy, F1 score, precision, and recall.
 However, the Random Forest Classifier achieved the highest scores on the test set, with an accuracy of 0.9969, an F1 score of 0.9969, a precision of 0.9938, and a recall of 1.0000. The XGBClassifier also performed well with an accuracy of 0.9978, an F1 score of 0.9978, a precision of 0.9956, and a recall of 1.0000.
 Therefore, we can conclude that the Random Forest Classifier is the best model for this task, as it achieved the highest scores on the test set.
 
