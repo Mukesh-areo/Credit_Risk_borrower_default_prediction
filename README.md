@@ -24,19 +24,22 @@ The data was preprocessed by handling missing values, encoding categorical varia
 9. It replaces missing values in the `AMOUNT_OF_INSTALLMENT` column with the median.
 10. It replaces missing values in the `INSTALMENT_LOAN_TYPE` column with the mode.
 11. It replaces missing values in the `LAST_PAYMENT_AGE` column with the median.
-Exploratory Data Analysis
-The EDA revealed some interesting insights about the data set. The majority of the customers had not defaulted on their loans. The repayment frequency was predominantly monthly, followed by weekly and quarterly. The majority of the loans had a duration of 1 year or less. The outstanding balance of the loans varied widely, with some customers having significantly high balances.
-Most of the loans in the dataset have been successfully repaid, which indicates that the lending business has a good track record of loan repayment.
-The majority of the loans in the dataset have been sanctioned for a period of 65 months.
-Most of the borrowers have an account age between 2 to 5 years.
-The currency used for most of the loans in the dataset is Kenyan Shilling.
-There is a strong positive correlation between the amount of installment and the total outstanding balance of the loan.
+
+### Exploratory Data Analysis
+   - The EDA revealed some interesting insights about the data set. The majority of the customers had not defaulted on their loans.
+   - The repayment frequency was predominantly monthly, followed by weekly and quarterly. 
+   - The majority of the loans had a duration of 1 year or less. The outstanding balance of the loans varied widely, with some customers having significantly high balances.
+   - Most of the loans in the dataset have been successfully repaid, which indicates that the lending business has a good track record of loan repayment.
+   - The majority of the loans in the dataset have been sanctioned for a period of 65 months.
+   - Most of the borrowers have an account age between 2 to 5 years.
+   - The currency used for most of the loans in the dataset is Kenyan Shilling.
+   - There is a strong positive correlation between the amount of installment and the total outstanding balance of the loan.
          Correlation coefficient: 0.40971004398233546
-      6.   There is also a strong positive correlation between the age of the loan and the outstanding balance.
-      7.   Loans with higher sanction amounts tend to have a longer loan duration.
-    8. The repayment frequency of most loans in the dataset is monthly.
-    9.    The default rate for loans in the dataset is around 8%, which indicates that there is a risk of default associated with lending.
-    10.   Overall, the dataset provides valuable insights into the lending business, which can be used to optimize lending strategies and minimize the risk of default.
+   - There is also a strong positive correlation between the age of the loan and the outstanding balance.
+   - Loans with higher sanction amounts tend to have a longer loan duration.
+   - The repayment frequency of most loans in the dataset is monthly.
+   - The default rate for loans in the dataset is around 8%, which indicates that there is a risk of default associated with lending.
+   - Overall, the dataset provides valuable insights into the lending business, which can be used to optimize lending strategies and minimize the risk of default.
 
 
 
