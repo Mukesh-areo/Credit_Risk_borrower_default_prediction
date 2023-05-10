@@ -1,0 +1,99 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loan Status Prediction App</title>
+</head>
+<body>
+    <h1>Loan Status Prediction App</h1>
+    <form method="POST" action="/predict">
+        <label for="currency_code">Currency Code (e.g. USD, EUR, INR):</label>
+        <input type="text" id="currency_code" name="currency_code"><br><br>
+
+        <label for="repayment_frequency">Repayment Frequency (e.g. monthly, quarterly, annually):</label>
+        <input type="text" id="repayment_frequency" name="repayment_frequency"><br><br>
+
+        <label for="number_of_installments">Number of Installments:</label>
+        <input type="number" id="number_of_installments" name="number_of_installments"><br><br>
+
+        <label for="sanction_amt">Sanction Amount:</label>
+        <input type="number" id="sanction_amt" name="sanction_amt"><br><br>
+
+        <label for="tot_outstd_bal">Total Outstanding Balance:</label>
+        <input type="number" id="tot_outstd_bal" name="tot_outstd_bal"><br><br>
+
+        <label for="over_due_amt">Overdue Amount:</label>
+        <input type="number" id="over_due_amt" name="over_due_amt"><br><br>
+
+        <label for="amount_of_installment">Amount of Installment:</label>
+        <input type="number" id="amount_of_installment" name="amount_of_installment"><br><br>
+
+        <label for="installment_loan_type">Installment Loan Type (e.g. education, housing, car):</label>
+        <input type="text" id="installment_loan_type" name="installment_loan_type"><br><br>
+
+        <label for="loan_status">Loan Status (e.g. Paid, Default):</label>
+        <input type="text" id="loan_status" name="loan_status"><br><br>
+
+        <label for="year_reported">Year Reported:</label>
+        <input type="number" id="year_reported" name="year_reported"><br><br>
+
+        <label for="month_reported">Month Reported:</label>
+        <input type="number" id="month_reported" name="month_reported"><br><br>
+
+        <label for="day_reported">Day Reported:</label>
+        <input type="number" id="day_reported" name="day_reported"><br><br>
+
+        <label for="day_of_week_reported">Day of Week Reported:</label>
+        <input type="number" id="day_of_week_reported" name="day_of_week_reported"><br><br>
+
+        <label for="account_age">Account Age (in months):</label>
+        <input type="number" id="account_age" name="account_age"><br><br>
+
+        <label for="last_payment_age">Age of Last Payment (in months):</label>
+        <input type="number" id="last_payment_age" name="last_payment_age"><br><br>
+
+        <label for="loan_duration">Loan Duration (in months):</label>
+        <input type="number" id="loan_duration" name="loan_duration"><br><br>
+
+        <input type="submit" value="prediction_texts">
+    </form>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loan Status Prediction App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 style="color: #ff0000;">Loan Status Prediction App</h1>
+  <img  alt="Dun & Bradstreet ">
+  <form action="/predict" method="post">
+    <input type="text" name="currency_code" placeholder="Currency Code">
+    <input type="text" name="repayment_frequency" placeholder="Repayment Frequency">
+    <input type="text" name="number_of_installments" placeholder="Number of Installments">
+    <input type="text" name="sanction_amt" placeholder="Sanction Amount">
+    <input type="text" name="tot_outstd_bal" placeholder="Total Outstanding Balance">
+    <input type="text" name="over_due_amt" placeholder="Overdue Amount">
+    <input type="text" name="amount_of_installment" placeholder="Amount of Installment">
+    <input type="text" name="installment_loan_type" placeholder="Installment Loan Type">
+    <input type="text" name="loan_status" placeholder="Loan Status">
+    <input type="text" name="year_reported" placeholder="Year Reported">
+    <input type="text" name="month_reported" placeholder="Month Reported">
+    <input type="text" name="day_reported" placeholder="Day Reported">
+    <input type="text" name="day_of_week_reported" placeholder="Day of Week Reported">
+    <input type="text" name="account_age" placeholder="Account Age">
+    <input type="text" name="last_payment_age" placeholder="Last Payment Age">
+    <input type="text" name="loan_duration" placeholder="Loan Duration">
+    <input type="submit" value="Predict">
+  </form>
+  {% if prediction_text %}
+    <h2 style="color: #0000ff;">{{ prediction_text }}</h2>
+  {% endif %}
+  {% if prediction_texts %}
+    <h2 style="color: #0000ff;">{{ prediction_texts }}</h2>
+  {% endif %}
+</body>
+</html>
